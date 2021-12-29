@@ -1,3 +1,8 @@
+All programs should be in C++ programs. This is just learning of 30 days of code (Competitive Programming).
+All programs and Solutions are mention below.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#1: program for Sizeof() function
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -23,3 +28,10 @@ int main()
     return 0;
      
 }
+
+SOLUTIONS:
+size of int4
+size of float4
+size of char1
+size of short int2
+size of long int4
