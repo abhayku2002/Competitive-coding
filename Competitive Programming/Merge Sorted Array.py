@@ -44,6 +44,12 @@ class Solution:
             if merge >= n:
                 break
             if nums1[i] ==0:
-                nums1[i]=nums2[merge]
+                nums1[i]=nums2[merge] #merging
                 merge +=1
-        nums1.sort()  
+        nums1.sort()  # sorting
+'''
+Explanation:
+Take two int arrays(nums1,2) , int m,n
+len of nums1 is m +n and nums2 is n
+merging
+Sorting
