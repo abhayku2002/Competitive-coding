@@ -37,3 +37,13 @@ nums2.length == n
 -109 <= nums1[i], nums2[j] <= 109
 '''
 
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        merge = 0
+        for i in range (len(nums1)):
+            if merge >= n:
+                break
+            if nums1[i] ==0:
+                nums1[i]=nums2[merge]
+                merge +=1
+        nums1.sort()  
