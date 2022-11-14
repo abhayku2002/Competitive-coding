@@ -132,3 +132,7 @@ if __name__ == '__main__':
             a.append(x)  # add to the end of the list
         printList(Solution().segregate(a.head))
 # } Driver Code Ends
+
+'''
+A really brute force way would be to search for all possible pairs of numbers but that would be too slow. Again, it's best to try out brute force solutions for just for completeness. It is from these brute force solutions that you can come up with optimizations.
+'''
