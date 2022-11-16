@@ -33,3 +33,59 @@ You don't need to read input or print anything. The task is to complete the func
 Expected Time Complexity: O(n)
 Expected Auxiliary Space: O(n)
 '''
+
+class Solution:
+    #Back-end complete function Template for Python 3
+    
+    #Function to find the leaders in the array.
+    def leaders(self, A, N):
+
+        l=[]
+
+        max=A[N-1]
+
+        l.append(A[N-1])
+
+        for i in range(N-2,-1,-1):
+
+            if A[i]>=max:
+
+                l.append(A[i])
+
+                max=A[i]
+
+        l.reverse()
+
+        return l
+
+#{ 
+ # Driver Code Starts
+#Initial Template for Python 3
+
+import math
+
+
+    
+def main():
+    
+    T=int(input())
+    
+    while(T>0):
+        
+        
+        N=int(input())
+        
+        A=[int(x) for x in input().strip().split()]
+        obj = Solution()
+        
+        A=obj.leaders(A,N)
+        
+        for i in A:
+            print(i,end=" ")
+        print()
+        
+        T-=1
+
+if __name__=="__main__":
+    main()
+# } Driver Code Ends
