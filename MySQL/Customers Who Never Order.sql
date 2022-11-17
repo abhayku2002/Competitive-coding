@@ -1,3 +1,4 @@
+'''
 SQL Schema
 Table: Customers
 
@@ -23,5 +24,9 @@ id is the primary key column for this table.
 customerId is a foreign key of the ID from the Customers table.
 Each row of this table indicates the ID of an order and the ID of the customer who ordered it.
  
- 
- 
+'''
+
+
+select c.name as Customers 
+from Customers c
+where c.id not in (select customerId from Orders);
