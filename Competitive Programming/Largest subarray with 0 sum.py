@@ -19,3 +19,45 @@ Constraints:
 1 <= N <= 105
 -1000 <= A[i] <= 1000, for each valid i
 '''
+#Your task is to complete this function
+#Your should return the required output
+class Solution:
+    def maxLen(self, n, arr):
+
+        #Code here
+
+        d={}
+
+        curr_sum=0
+
+        max_len = 0
+
+        for i in range(0,n):
+
+            curr_sum = curr_sum + arr[i]
+
+            if curr_sum == 0:
+
+                max_len= i+1
+
+            if curr_sum in d:
+
+                max_len = max( max_len , i-d[curr_sum] )
+
+            else:
+
+                d[curr_sum] = i
+
+        return max_len
+
+#{ 
+ # Driver Code Starts
+if __name__=='__main__':
+    t= int(input())
+    for i in range(t):
+        n = int(input())
+        arr = list(map(int, input().strip().split()))
+        ob = Solution()
+        print(ob.maxLen(n ,arr))
+
+# } Driver Code Ends
