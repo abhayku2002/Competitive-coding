@@ -30,3 +30,20 @@ Each row of this table indicates the ID of an order and the ID of the customer w
 select c.name as Customers 
 from Customers c
 where c.id not in (select customerId from Orders);
+
+
+Case 1
+
+Customers =
+| id | name  |
+| -- | ----- |
+| 1  | Joe   |
+| 2  | Henry |
+| 3  | Sam   |
+| 4  | Max   |
+Orders =
+| id | customerId |
+| -- | ---------- |
+| 1  | 3          |
+| 2  | 1          |
+
