@@ -34,3 +34,28 @@ Constraints:
 1<=N<=105
 0<=a[i]<=105
 '''
+
+
+def rotate( arr, n):
+    temp=arr
+    lastval=temp.pop()
+    temp.insert(0,lastval)
+    return temp
+    
+
+def main():
+
+    T = int(input())
+
+    while(T > 0):
+        n = int(input())
+        a = [int(x) for x in input().strip().split()]
+        rotate(a, n)
+        print(*a)
+
+        T -= 1
+
+
+if __name__ == "__main__":
+    main()
+
