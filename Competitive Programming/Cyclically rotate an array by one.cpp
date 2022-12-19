@@ -35,8 +35,7 @@ Constraints:
 1<=N<=105
 0<=a[i]<=105
 */
-//{ Driver Code Starts
-//Initial Template for C++
+
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -61,10 +60,6 @@ int main()
         return 0;
 }
 
-// } Driver Code Ends
-
-
-//User function Template for C++
 
 void rotate(int arr[], int n)
 {
