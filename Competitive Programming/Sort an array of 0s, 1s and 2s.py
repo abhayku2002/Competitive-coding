@@ -36,3 +36,26 @@ Constraints:
 1 <= N <= 10^6
 0 <= A[i] <= 2
 '''
+
+class Solution:
+    def sort012(self,arr,n):
+        arrays=arr
+        output= arrays.sort()
+        return output
+        
+
+
+
+
+
+if __name__ == '__main__':
+    t=int(input())
+    for _ in range(t):
+        n=int(input())
+        arr=[int(x) for x in input().strip().split()]
+        ob=Solution()
+        ob.sort012(arr,n)
+        for i in arr:
+            print(i, end=' ')
+        print()
+
