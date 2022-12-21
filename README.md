@@ -2,4 +2,4 @@
 This is Public repo
 Contribute if possible
 
-# Any programming is acceptable 
+# Any programming language is acceptable 
