@@ -34,7 +34,6 @@ Constraints:
 
  '''
 
-#User function Template for python3
 
 
 def find(arr,n,x):
@@ -55,9 +54,6 @@ def find(arr,n,x):
     return p+1-len(li),p
 
 
-
-#{ 
- # Driver Code Starts
 t=int(input())
 for _ in range(0,t):
     l=list(map(int,input().split()))
@@ -66,4 +62,4 @@ for _ in range(0,t):
     arr=list(map(int,input().split()))
     ans=find(arr,n,x)
     print(*ans)
-# } Driver Code Ends
+
