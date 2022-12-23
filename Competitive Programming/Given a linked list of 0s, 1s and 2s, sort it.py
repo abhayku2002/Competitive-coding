@@ -136,3 +136,16 @@ if __name__ == '__main__':
 '''
 A really brute force way would be to search for all possible pairs of numbers but that would be too slow. Again, it's best to try out brute force solutions for just for completeness. It is from these brute force solutions that you can come up with optimizations.
 '''
+
+class Solution:	
+    #Function to reverse every sub-array group of size k.
+	def reverseInGroups(self, arr, N, K):
+	    i=0
+	    while i < N:
+             start =i
+             end=min(i+K-1,N-1)
+             while (start< end):
+                 arr[start],arr[end]=arr[end],arr[start]
+                 start+=1
+                 end-=1
+                 i+=K 
