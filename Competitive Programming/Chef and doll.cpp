@@ -19,4 +19,34 @@ Constraints
 1<=N<=100000 (10^5)
 0<=type<=100000
 */
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
 
+int main() {
+	int t;
+	 cin >> t; //testcases
+	 while(t--){
+	     
+	     int n;
+	     cin >> n;  // nuumber of dolls 
+	     int arr[100000]; // constraints
+	    // int ct[n];
+	     for (int i=0; i<n; i++){
+	         cin >> arr[i];
+	     }
+	     sort(arr,arr+n);   // sorting dunction(initial,end)
+	     for(int i=0; i<n; i+=2){
+	         if(arr[i]!=arr[i+1]){
+	             cout<<arr[i]<<endl;   //OUTPUT 
+	           break; 
+	         }
+	        
+	     }
+	     
+	    
+	     
+	     
+	 }
+	return 0;
+}
