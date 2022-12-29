@@ -37,7 +37,6 @@ Constraints:
 1 ≤ A[i] ≤ 1018
 '''
 
-#User function template for Python
 
 class Solution:	
     #Function to reverse every sub-array group of size k.
@@ -58,12 +57,6 @@ class Solution:
 
             print(i,end=" ")
 	        
-		# code here
-
-
-#{ 
- # Driver Code Starts
-#Initial template for Python
 
 import math
 def main():
