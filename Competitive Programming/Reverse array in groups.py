@@ -36,3 +36,55 @@ Constraints:
 1 ≤ N, K ≤ 107
 1 ≤ A[i] ≤ 1018
 '''
+
+#User function template for Python
+
+class Solution:	
+    #Function to reverse every sub-array group of size k.
+	def reverseInGroups(self, arr, N, K):
+	    l=[]
+
+        while N>0:
+
+            arr2=arr[:K][::-1]
+
+            l.extend(arr2)
+
+            del arr[:K]
+
+            N=N-K
+
+        for i in l:
+
+            print(i,end=" ")
+	        
+		# code here
+
+
+#{ 
+ # Driver Code Starts
+#Initial template for Python
+
+import math
+def main():
+    T=int(input())
+    while(T>0):
+        nk=[int(x) for x in input().strip().split()]
+        N=nk[0]
+        K=nk[1]
+        arr=[int(x) for x in input().strip().split()]
+        
+        ob = Solution()
+        ob.reverseInGroups(arr,N,K)
+        for i in arr:
+            print(i,end=" ")
+        print()
+        T-=1
+
+if __name__=="__main__":
+    main()
+
+
+
+
+# } Driver Code Ends
