@@ -39,4 +39,26 @@ Constraints:
 
 '''
 
+class Solution:
+	def minJumps(self, arr, n):
+	    #code here
+	    c,m,ans=0,0,0
+        for r in range(n):
+            m=max(m,r+arr[r])
+            if c<r:
+                return -1
+            if c==r and r!=n-1:
+                c=m
+                ans+=1
+        return ans
+
+if __name__ == '__main__':
+	T=int(input())
+	for i in range(T):
+		n = int(input())
+		Arr = [int(x) for x in input().split()]
+		ob = Solution()
+		ans = ob.minJumps(Arr,n)
+		print(ans)
+
 
