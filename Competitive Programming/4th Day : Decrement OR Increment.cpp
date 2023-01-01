@@ -20,7 +20,6 @@ Since 5 is not divisible by 4 hence, its value is decreased by 1.
 
 */
 
-//SOLUTION STATEMENT
 
 #include<bits/stdc++.h>
 #include <iostream>
