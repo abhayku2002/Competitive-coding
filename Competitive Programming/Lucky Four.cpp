@@ -16,3 +16,29 @@ Constraints
 (Subtask 2): 0 ≤ Numbers from the list ≤ 109 - 67 points.
 */
 
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int main (){
+	ll t,n;
+	cin>>t;
+	while(t--)
+	{
+		cin>>n;
+		ll count=0;
+		while(n>0){
+			int mod= n%10;
+			if (mod==4) count++;
+			n/=10;
+
+		}
+		cout<< count<< endl;
+		
+
+
+	}
+
+	return 0;
+	
+}
