@@ -12,3 +12,21 @@ Constraints
 1 ≤ T ≤ 1000 1 ≤ A,B,C ≤ 180
 */
 
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,a,b,c;
+	cin>>t;
+	while(t--){
+	        cin>>a>>b>>c;
+	        if(a+b+c==180){
+	            cout<<"YES"<<endl;
+	        }
+	        else{
+	            cout<<"NO"<<endl;
+	        }
+	    }
+	    return 0;
+	    
+	}
