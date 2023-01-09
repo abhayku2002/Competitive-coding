@@ -17,3 +17,27 @@ Constraints
 0 \lt X \leq 20000<X≤2000 - the amount of cash which Pooja wishes to withdraw.
 0 \leq Y \leq 20000≤Y≤2000 with two digits of precision - Pooja's initial account balance.
 */
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cout.precision(2);
+
+    int a;
+    float b;
+    cin >> a >> b;
+    
+    if ((a%5==0) && (b-a-0.5>=0))
+    {
+        cout << fixed << b-a-0.5 << endl;
+    }
+    else
+    {
+        cout << fixed << b << endl;
+    }
+
+    return 0;
+}
