@@ -15,3 +15,25 @@ Constraints
 1 \leq T \leq 1001≤T≤100
 1 \leq X, Y \leq 1001≤X,Y≤100
 */
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b;
+	    cin>>a>>b;
+	    if(a==10){
+	        cout<<"NO"<<endl;
+	    }
+	    else if(a>10*b){
+	        cout<<"YES"<<endl;
+	    }
+	    else{
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
