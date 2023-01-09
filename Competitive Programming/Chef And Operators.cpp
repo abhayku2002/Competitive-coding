@@ -17,3 +17,31 @@ For each line of input produce one line of output. This line contains any one of
 Constraints
 1 ≤ T ≤ 10000 1 ≤ A, B ≤ 1000000001
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int a,b;
+        cin>>a>>b;
+        if(a>b){
+            cout<<">"<<endl;
+            
+        }
+        else if(a==b){
+            cout<<"="<<endl;
+        }
+        else{
+            cout<<"<"<<endl;
+            
+        }
+        
+        
+    }
+    return 0;
+}
+
