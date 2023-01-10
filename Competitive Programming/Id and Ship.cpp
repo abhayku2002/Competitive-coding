@@ -17,3 +17,36 @@ Constraints
 1 ≤ T ≤ 1000
 */
 
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    
+	int T;
+	char ch;
+	cin>>T;
+	
+	for(int i=0;i<T;i++)
+	{
+	    cin>>ch;
+	    if(ch=='B'||ch=='b')
+	    {
+	        cout<<"BattleShip"<<endl;
+	    }
+	    else if(ch=='C'||ch=='c')
+	    {
+	        cout<<"Cruiser"<<endl;
+	    }
+	    else if(ch=='D'||ch=='d')
+	    {
+	        cout<<"Destroyer"<<endl;
+	    }
+	    else if(ch=='F'||ch=='f')
+	    {
+	        cout<<"Frigate"<<endl;
+	    }
+	    else
+	     exit(0);
+	}
+	return 0;
+}
