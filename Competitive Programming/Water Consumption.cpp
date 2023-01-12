@@ -16,3 +16,27 @@ You may print each character of the string in uppercase or lowercase (for exampl
 Constraints
 1 \leq T \leq 20001≤T≤2000
 */
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t ;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        if(n>=2000){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+            
+        
+    }
+    
+    
+
+	return 0;
+}
