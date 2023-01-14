@@ -19,4 +19,26 @@ Constraints
 1 \leq T \leq 2001≤T≤200
 1 \leq X \leq 2001≤X≤200
 */
+#include <bits/stdc++.h>
+using namespace std;
 
+int main() {
+    int T;
+    cin>>T;
+    while(T--){
+        int x;
+        cin>>x;
+        if(x<=70){
+            cout<<"0"<<endl;
+        }
+        else if(x <=100 && x>70){
+            cout<<"500"<<endl;
+        }
+        else if (x>100){
+            cout<<"2000"<<endl;
+        }
+        
+    }
+	
+	return 0;
+}
