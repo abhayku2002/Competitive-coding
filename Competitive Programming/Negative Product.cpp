@@ -17,3 +17,25 @@ Constraints
 1 \leq T \leq 10001≤T≤1000
 -10 \leq A, B, C \leq 10−10≤A,B,C≤10
 */
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b,c;
+        cin>>a>>b>>c;
+        int p1=a*b;
+        int p2=b*c;
+        int p3=c*a;
+        if(p1<0 || p2<0 || p3<0){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
+    
+	return 0;
+}
