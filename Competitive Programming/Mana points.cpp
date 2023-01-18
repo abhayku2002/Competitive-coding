@@ -18,3 +18,22 @@ Constraints
 1 \le Y \le 10001≤Y≤1000
 */
 
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        
+    int x,y,n;
+    
+    cin>>x>>y;
+    n=y/x;
+    cout<<n<<endl;
+        
+    }
+    
+	return 0;
+}
