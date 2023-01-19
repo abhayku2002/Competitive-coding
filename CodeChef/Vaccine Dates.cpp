@@ -25,3 +25,23 @@ D,L,R.
 Output Format
 For each test case, print a single line containing one string - "Too Early" (without quotes) if it's too early to take the vaccine, "Too Late" (without quotes) if it's too late to take the vaccine, "Take second dose now" (without quotes) if it's the correct time to take the vaccine.
 */
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b,c;
+	    cin>>a>>b>>c;
+	    if (a>=b && a<=c)
+	        cout<<"Take second dose now\n";
+	    else {
+	        if (a<b)
+	            cout<<"Too Early\n";
+	        else
+	            cout<<"Too Late\n";
+	    }
+	}
+	return 0;
+}
