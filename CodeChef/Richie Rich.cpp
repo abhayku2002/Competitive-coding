@@ -135,3 +135,17 @@ Test Case
  =1 year to do so.
  
  */
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b,c,d,y;
+        cin>>a>>b>>c;
+        d=b-a;
+        y=d/c;
+        cout<<y<<endl;
+    }
+}
