@@ -6,4 +6,4 @@ This 75 are Easy/medium Level problems
 
 https://leetcode.com/list/xi4ci4ig/ 
 
-All the Solution are available in folder
+All the Solution are available in   Blind 75 Must Do LeetCode folder
