@@ -26,3 +26,19 @@ Subtask 1 (48 points) : 1 ≤ N ≤ 105
 Subtask 2 (52 points) : 1 ≤ N ≤ 109
 */
 
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    long long int n,h;
+	    cin>>n;
+	    n = 8*n + 1;
+	    h = (sqrt(n) - 1)/2;
+	    cout<<h<<endl;
+	    
+	}
+	return 0;
+}
