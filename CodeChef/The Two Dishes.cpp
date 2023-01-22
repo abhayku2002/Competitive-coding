@@ -100,3 +100,24 @@ N,
 S, denoting the maximum tastiness and the sum of tastiness of the two dishes, respectively.
 */
 
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b,diff=0;
+	    cin>>a>>b;
+	    if(a>=b)
+	    {
+	        diff=b;
+	    }
+	    else{
+	        diff=a-(b-a);
+	    }
+	    cout<<diff<<endl;
+	}
+	return 0;
+}
+
