@@ -79,4 +79,26 @@ For each test case, print a single line containing the integer
 0 if Chef cannot switch to either language.
 
 */
+#include<bits/stdc++.h>
+using namespace std;
 
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int a1,a2,b1,b2,a,b;
+        cin>>a>>b>>a1>>b1>>a2>>b2;
+        if(a==a1 && b==b1 || a==b1 && b==a1){
+            cout<<"1"<<endl;
+        }
+        else if(a==a2 && b==b2 || a==b2 && b==a2){
+            cout<<"2"<<endl;
+        }
+        else{
+            cout<<"0"<<endl;
+        }
+        
+    }
+    return 0;
+    
+}
