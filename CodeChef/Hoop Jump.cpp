@@ -27,3 +27,18 @@ N.
 Output
 For each testcase, output in a single line the answer to the problem.
 */
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,count=0;
+	    cin>>n;
+	    cout<<(n/2)+1<<endl;
+	
+	}
+	return 0;
+}
