@@ -32,3 +32,20 @@ For each test case, output YES if Chef is eligible to give the exam, NO otherwis
 
 You may print each character of the string in uppercase or lowercase (for example, the strings YES, yEs, yes, and yeS will all be treated as identical).
 */
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int x,y,age;
+        cin>>x>>y>>age;
+        if(age>=x && age<y)
+            cout<<"YES"<<endl;
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
+    return 0;
+}
