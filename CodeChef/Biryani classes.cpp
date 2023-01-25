@@ -22,20 +22,18 @@ Output Format
 For each test case, output on a new line the total amount of money that Chef will have to pay.
 
 */
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main(){
+int main() {
     int t;
     cin>>t;
     while(t--){
-        int x,y,age;
-        cin>>x>>y>>age;
-        if(age>=x && age<y)
-            cout<<"YES"<<endl;
-        else{
-            cout<<"NO"<<endl;
-        }
+        int x,y,pay;
+        cin>>x>>y;
+        pay=x*y;
+        cout<<pay<<endl;
     }
-    return 0;
+	return 0;
 }
+
