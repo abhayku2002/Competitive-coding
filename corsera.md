@@ -34,3 +34,4 @@ They can also identify variables in the problem space – that is, it helps them
 to provide the values for the variables. Since I discovered that the most valuable aspect is the shared insights and learning, next time I would use the visualization 
 activity as a starting point for a series of design thinking activities. Then the revised graphic that incorporates their combined feedback can serve as a reference
 tool throughout the remainder of their work.
+invalid
