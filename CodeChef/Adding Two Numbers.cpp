@@ -10,5 +10,22 @@ The first line contains an integer T, the total number of test cases. Then follo
 Output Format
 For each test case, add A and B and display the sum in a new line.
 
-Everything your program prints is considered “output”, so if you output some debugging statements like “Please enter T”, this will be considered as part of your answer, and because it does not satisfy the output format, it will be marked wrong, even if your answer is otherwise correct!
+Everything your program prints is considered “output”, so if you output some debugging statements like
+“Please enter T”, this will be considered as part of your answer, and because it does not satisfy the output format, it will be marked wrong,
+even if your answer is otherwise correct!
 */
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b;
+        cin>>a>>b;
+        cout<<a+b<<endl;
+        
+    }
+    return 0;
+    
+}
