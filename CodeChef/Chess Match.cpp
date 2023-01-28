@@ -58,3 +58,23 @@ B.
 Output
 For each test case, print a single line containing one integer — the duration of the game.
 */
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int n,a,b;
+        cin>>n>>a>>b;
+        int m = 2 * (180 + n);
+        m = m -(a+b);
+        cout<<m<<endl;
+        
+    }
+    
+	return 0;
+}
