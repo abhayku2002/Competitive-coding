@@ -51,3 +51,36 @@ Each character of the output may be printed in either uppercase or lowercase. Fo
 
 
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    cin>>n;
+	    string l;
+	    cin>>l;
+	    int count = 0;
+	    for(int i=0;i<n;i++){
+		    if(l[i]=='a' || l[i]=='e' || l[i]=='i'|| l[i]=='o'|| l[i]=='u')
+		    {
+			    count = 0;
+			    continue;
+		    }
+		    else{
+			    count++;
+			    if(count==4)
+				    break;
+		    }
+
+	    }
+	    if(count<4)
+		    cout<<"YES"<<endl;
+	    else
+		    cout<<"NO"<<endl;
+    }
+    return 0;
+}
