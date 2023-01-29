@@ -1,4 +1,4 @@
-# All leetCode Question with Solutions are available here
+# All leetCode Question can be found in Leetcode Website ONLY (Sharing only Solutions)
 
 
 # The Blind 75 Must Do LeetCode Question:
