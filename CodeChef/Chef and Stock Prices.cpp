@@ -34,3 +34,23 @@ For each test case, if Chef buys the stock print YES, otherwise print NO.
 
 You may print each character of the string in uppercase or lowercase (for example, the strings yEs, yes, Yes, and YES will all be treated as identical).
 */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b;
+        float s,c;
+        cin>>s>>a>>b>>c;
+        s += (s*(c/100.0));
+        if(s>=a && s<=b)
+            cout<<"YES"<<endl;
+        else
+            cout<<"NO"<<endl;
+    }
+    return 0;
+}
+
