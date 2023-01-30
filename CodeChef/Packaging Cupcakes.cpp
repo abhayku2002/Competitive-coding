@@ -14,3 +14,18 @@ Output
 For each test case, output the package size that will maximize the number of leftover cupcakes. If multiple package sizes will result
 in the same number of leftover cupcakes, print the largest such size.
 */
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int cake= (n/2)+1;
+        cout<<cake<<endl;
+        
+    }
+    return 0;
+}
