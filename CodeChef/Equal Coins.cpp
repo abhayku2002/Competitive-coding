@@ -1,5 +1,8 @@
 
 /*
+https://www.codechef.com/problems/EQUALCOIN
+
+
 Problem
 Read problem statements in Bengali, Russian, Mandarin and Vietnamese as well.
 Chef has 
