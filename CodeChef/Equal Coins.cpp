@@ -28,3 +28,29 @@ Y.
 Output Format
 For each test case, print "YES" (without quotes) if Chef can distribute all the coins equally and "NO" otherwise.
 You may print each character of the string in uppercase or lowercase (for example, the strings "yEs", "yes", "Yes" and "YES" will all be treated as identical).
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	// your code goes here
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int x,y;
+        cin>>x>>y;
+        if((x+2*y)%2 or (x<2 and y%2))
+        {
+            cout<<"NO"<<endl;
+        }
+        else
+        {
+            cout<<"YES"<<endl;
+        }
+    }
+	return 0;
+	
+}
