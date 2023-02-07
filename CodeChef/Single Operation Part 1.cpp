@@ -2,6 +2,7 @@
 
 
 /*
+https://www.codechef.com/problems/SINGLEOP1
 
 Problem
 Chef has the binary representation 
