@@ -34,18 +34,15 @@ int main() {
 	int t;
 	cin>>t;
 	while(t--){
-	    int a,b,c,x;
-	    cin>>a>>b>>c>>x;
-	    if(a+b >= x)
-	        cout<<"YES"<<endl;
-	    else if(b+c>=x)
-	        cout<<"YES"<<endl;
-	    else if(c+a >= x)
+	    int x;
+	    cin>>x;
+	    if(x >= 80)
 	        cout<<"YES"<<endl;
 	    else{
 	        cout<<"NO"<<endl;
 	        
 	    }
+	        
 	}
 	return 0;
 }
