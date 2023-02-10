@@ -37,3 +37,34 @@ For each test case, if it is possible to delete a subsequence under the given co
 1
 −1.
 */
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+void solution(){
+    int n;
+    cin>>n;
+    string s;
+    cin>>s;
+    //map<char,int> mp;
+    for(int i=0;i<n;i++)
+        s[i]++;
+        if(s[i]>=2){
+            cout<<n-2<<endl;
+            return ; 
+            
+        }
+    cout<<-1<<endl;       
+}
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    solution();
+	}
+	
+	return 0;
+}
+
