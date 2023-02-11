@@ -78,3 +78,34 @@ int main() {
     
 	return 0;
 }
+
+
+//Solution 2:
+
+#include <iostream>
+using namespace std;
+
+void solve()
+{
+    int n,a,b;
+	cin>>n>>a>>b;
+    int tt,tl,duration;
+    tt=2*(180+n);
+    tl=a+b;
+    duration=tt-tl;
+    cout<<duration<<endl;
+    //return duration;
+}
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    solve();
+	    
+	}
+	return 0;
+}
+
