@@ -55,3 +55,30 @@ i
  .
 Output
 For each test case, print a single line containing one integer - the highest rating of an IMDB movie which Chef can store in his hard disk.
+*/
+#include <iostream>
+using namespace std;
+
+#define fast ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+
+int main() {
+	fast;
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,x,ans=0;
+	    cin>>n>>x; 
+	    for(int i=0; i<n; i++)
+	    {
+	        int s,r;
+	        cin>>s>>r;
+	        if(s<=x)
+	        {
+	            ans = max(ans,r);
+	        }
+	    }
+	    cout<<ans<<endl;
+	}
+	return 0;
+}
