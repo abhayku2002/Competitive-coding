@@ -17,3 +17,28 @@ Output
 For each test case, display the type of doll that doesn't have a pair, in a new line.
 */
 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int test;
+    cin>>test;
+    
+    while(test--){
+        int ans=0;
+        int n;
+        cin>>n;
+        while(n--){
+            int t;
+            cin>>t;
+            ans=ans^t;
+            
+        }
+        cout<<ans<<endl;
+    }
+    
+
+    return 0;
+}
