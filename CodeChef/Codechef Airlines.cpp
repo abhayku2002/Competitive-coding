@@ -1,6 +1,9 @@
 
 /*
 Problem
+
+https://www.codechef.com/problems/AIRLINES
+
 Chef has opened a new airline. Chef has 
 10
 10 airplanes where each airplane has a capacity of 
