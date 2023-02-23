@@ -26,3 +26,21 @@ For each test case, output on a new line, YES, if the turn was good and NO other
 
 Each character of the output may be printed in either uppercase or lowercase. That is, the strings NO, no, nO, and No will be treated as equivalent.
 */
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int x,y;
+	    cin>>x>>y;
+	    if(x+y>6)
+	        cout<<"YES"<<endl;
+	    else{
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
