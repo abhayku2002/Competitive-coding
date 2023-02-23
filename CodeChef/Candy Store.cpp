@@ -29,3 +29,23 @@ Y — the daily goal of Chef, and the number of chocolates he actually sells.
 Output Format
 For each test case, output on a new line the total amount Chef made in a day.
 */
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int x,y,bonus;
+	    cin>>x>>y;
+	    bonus = (y-x)*2;
+	    if(bonus>0)
+	        cout<<x+(bonus)<<endl;
+	    else{
+	        cout<<y<<endl;
+	    }
+	}
+	return 0;
+}
