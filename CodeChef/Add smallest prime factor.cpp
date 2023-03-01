@@ -26,3 +26,38 @@ For each test case, output the minimum time in seconds, after which Chef's score
 ≥Y.
 */
 
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+int t;
+cin>>t;
+while(t--)
+{
+	int x,y;
+	cin>>x>>y;
+	int prime;
+	if(x%2==0){
+		prime = 2;
+	}
+	else if(x%3==0)
+	{
+		prime = 3;
+	}
+	else{
+		prime = x;
+	}
+	x = x +prime;
+	int diff= y-x;
+	int ans=diff/2;
+	if(diff % 2!=0)
+		ans+=1;
+	cout<<ans+1<<endl;
+
+}
+
+	return 0;
+}
+
+
