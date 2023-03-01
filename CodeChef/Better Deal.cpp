@@ -30,3 +30,24 @@ For each test case, output FIRST if the first store is cheaper, SECOND if the se
 
 The checker is case-insensitive so answers like FiRsT, first, and FIRST would be considered the same.
 */
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int a,b,x,y;
+	    cin>>a>>b;
+	    x = 100 - (100/100 * a);
+	    y = 200 - (200/100 * b);
+	    if(x==y)
+	        cout<<"BOTH"<<endl;
+	    else if(x>y)
+	        cout<<"SECOND"<<endl;
+	    else
+	        cout<<"FIRST"<<endl;
+	}
+	return 0;
+}
