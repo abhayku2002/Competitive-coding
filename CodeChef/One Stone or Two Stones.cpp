@@ -52,5 +52,57 @@ For each test case, output CHEF if Chef wins the game, and CHEFINA otherwise.
 
 You may print each character in uppercase or lowercase. For example, the strings CHEF, chef, Chef, and cHEf are all considered identical.
 */
+#include <iostream>
+using namespace std;
+
+int main() {
+int t;
+cin>>t;
+while(t--)
+{
+	int x,y;
+	cin>>x>>y;
+	if(x==y){
+	if(x%2!=0){
+		cout<<"CHEF"<<endl;
+		continue;
+	}
+	else{
+		cout<<"CHEFINA"<<endl;
+		continue;
+	}
+	}
+	int diff = abs(x-y);
+	if(diff>=2 && x>y){
+		cout<<"CHEF"<<endl;
+		continue;
+
+	}
+	else if(diff >=2 && x<y){
+		cout<<"CHEFINA"<<endl;
+		continue;
+	}
+	
+	
+	if(x%2!=0 && x>y){
+		cout<<"CHEFINA"<<endl;
+		continue;
+	}
+	else if(x%2==0 && x>y){
+		cout<<"CHEF"<<endl;
+		continue;
+	}
+	else if(y%2==0 && y>x){
+		cout<<"CHEF"<<endl;
+		continue;
+	}
+	else if(y%2!=0 && y>x){
+		cout<<"CHEFINA"<<endl;
+		continue;
+	}
+
+	}
+	return 0;
+}
 
 
