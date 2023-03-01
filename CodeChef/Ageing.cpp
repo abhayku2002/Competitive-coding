@@ -23,3 +23,21 @@ For each test case, output Chefina's age when Chef will be
 �
 X years old.
 */
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    
+	    int x,y;
+	    cin>>x;
+	    y=x-10;
+	    cout<<y<<endl;
+	    
+	}
+	return 0;
+}
