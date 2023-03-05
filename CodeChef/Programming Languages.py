@@ -24,3 +24,13 @@ T denoting the number of test cases. The description of
 T test cases follows.
 The first and only line of each test case contains six space-separated integers 
 '''
+T = int(input())
+for i in range(T):
+    A,B,A1,B1,A2,B2 = map(int,input().split())
+    if (A1==A or A1==B) and (B1==A or B1==B):
+        print("1")
+    elif (A2==A or A2==B) and (B2==A or B2==B):
+        print("2")
+    else:
+        print("0")
+    
