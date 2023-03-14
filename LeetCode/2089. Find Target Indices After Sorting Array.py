@@ -10,7 +10,6 @@ class Solution:
         nums.sort()
         for i in range(len(nums)):
             if nums[i]==target:
-               # return i
                 ans.append(i)
         return ans
         
