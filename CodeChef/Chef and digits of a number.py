@@ -13,3 +13,11 @@ Output
 Print T lines with a "Yes" or a "No", depending on whether its possible to make it all 0s or 1s or not. 
 
 '''
+for _ in range(int(input())):
+    number = str(input())
+    if((number.count("0")==1) or (number.count("1")==1)):
+        print("Yes")
+    else:
+        print("No")
+    
+    
